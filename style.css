@@ -1,0 +1,89 @@
+/* Basic styling for the to-do app */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.task-form {
+    margin-bottom: 20px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
+
+.task-controls button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #1e63ec;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.task-controls button:hover {
+    background-color: #0056b3;
+}
+
+.task-controls .delete {
+    background-color: #dc3545;
+}
+
+.task-controls .delete:hover {
+    background-color: #c82333;
+}
